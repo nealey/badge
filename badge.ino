@@ -55,170 +55,6 @@ struct Room {
 struct Room rooms[] = {
   {
     // 0
-    "West of House",
-    (
-      "You are standing in an open field west of a\n"
-      "white house, with a boarded front door."
-    ),
-    1, -1, -1, 2,
-  },
-  {
-    // 1
-    "North of House",
-    (
-      "You are facing the north side of a white house.\n"
-      "There is no door here, and all the windows are\n"
-      "boarded up. To the north a narrow path winds\n"
-      "through the trees."
-    ),
-    6, 0, 3, -1,
-  },
-  {
-    // 2
-    "South of House",
-    (
-      "You are facing the south side of a white house.\n"
-      "There is no door here, and all the windows are\n"
-      "boarded."
-    ),
-    -1, 0, 3, 8,
-  },
-  {
-    // 3
-    "Behind House",
-    (
-      "You are behind the white house. A path leads\n"
-      "into the forest to the east. In one corner of\n"
-      "the house there is a small window which is open."
-    ),
-    1, 4, 12, 2,
-  },
-  {
-    // 4
-    "Kitchen",
-    (
-      "You are in the kitchen of the white house. A\n"
-      "table seems to have been used recently for the\n"
-      "preparation of food. A passage leads to the\n"
-      "west and a dark staircase can be seen leading\n"
-      "upward. A dark chimney leads down and to the\n"
-      "east is a small window which is open."
-    ),
-    14, 5, 3, -1,
-  },
-  {
-    // 5
-    "Living Room",
-    (
-      "You are in the living room. There is a doorway\n"
-      "to the east, a wooden door with strange gothic\n"
-      "lettering to the west, which appears to be nailed\n"
-      "shut, a trophy case, and a large oriental rug in\n"
-      "the center of the room.\n"
-      "\n"
-      "Above the trophy case hangs an elvish sword of\n"
-      "great antiquity.\n"
-      "\n"
-      "A battery-powered brass lantern is on the trophy\n"
-      "case."
-    ),
-    -1, -1, 4, -1,
-  },
-  {
-    // 6
-    "Forest Path",
-    (
-      "This is a path winding through a dimly lit\n"
-      "forest. The path heads north-south here. One\n"
-      "particularly large tree with some low branches\n"
-      "stands at the edge of the path."
-    ),
-    7, 8, 9, 1,
-  },
-  {
-    // 7
-    "Clearing",
-    (
-      "You are in a clearing, with a forest\n"
-      "surrounding you on all sides. A path leads\n"
-      "south."
-    ),
-    -1, 8, 9, 6,
-  },
-  {
-    // 8
-    "Forest", // West
-    (
-      "This is a forest, with trees in all directions.\n"
-      "To the east, there appears to be sunlight."
-    ),
-    7, -1, 6, 10,
-  },
-  {
-    // 9
-    "Forest", // East
-    (
-      "This is a dimly lit forest, with large trees\n"
-      "all around."
-    ),
-    7, 6, 11, 12,
-  },
-  {
-    // 10
-    "Forest", // South
-    (
-      "This is a dimly lit forest, with large trees\n"
-      "all around."
-    ),
-    12, 8, 13, -1,
-  },
-  {
-    // 11
-    "Forest", // Far East
-    (
-      "The forest thins out, revealing impassable\n"
-      "mountains."
-    ),
-    9, 9, -1, 9,
-  },
-  {
-    // 12
-    "Clearing", // West
-    (
-      "You are in a small clearing in a well marked\n"
-      "forest path that extends to the east and west."
-    ),
-    9, 3, 13, 10,
-  },
-  {
-    // 13
-    "Canyon View",
-    (
-      "You are at the top of the Great Canyon on its\n"
-      "west wall. From here there is a marvelous view\n"
-      "of the canyon and parts of the Frigid River\n"
-      "upstream. Across the canyon, the walls of the\n"
-      "White Cliffs join the mighty ramparts of the\n"
-      "Flathead Mountains to the east. Following the\n"
-      "Canyon upstream to the north, Aragain Falls may\n"
-      "be seen, complete with rainbow. The mighty Frigid\n"
-      "River flows out from a great dark cavern. To the\n"
-      "west and south can be seen an immense forest,\n"
-      "stretching for miles around. A path leads north."
-    ),
-    12, 10, -1, -1,
-  },
-  {
-    // 14
-    "Dark Place",
-    (
-      "It is pitch black. You are likely to be eaten\n"
-      "by a grue."
-    ),
-    -1, -1, -1, 4,
-  },
-  {
-    // 15
     "--== Neale Pickett ==--",
     (
       "YOU ARE LIKELY TO BE\n"
@@ -233,11 +69,176 @@ struct Room rooms[] = {
       "\n"
       "]"
     ),
-    0, 0, 0, 0,
+    1, 1, 1, 1,
+  },
+  {
+    // 1
+    "West of House",
+    (
+      "You are standing in an open field west of a\n"
+      "white house, with a boarded front door."
+    ),
+    2, -1, -1, 3,
+  },
+  {
+    // 2
+    "North of House",
+    (
+      "You are facing the north side of a white house.\n"
+      "There is no door here, and all the windows are\n"
+      "boarded up. To the north a narrow path winds\n"
+      "through the trees."
+    ),
+    7, 1, 4, -1,
+  },
+  {
+    // 3
+    "South of House",
+    (
+      "You are facing the south side of a white house.\n"
+      "There is no door here, and all the windows are\n"
+      "boarded."
+    ),
+    -1, 1, 4, 9,
+  },
+  {
+    // 4
+    "Behind House",
+    (
+      "You are behind the white house. A path leads\n"
+      "into the forest to the east. In one corner of\n"
+      "the house there is a small window which is open."
+    ),
+    2, 5, 13, 3,
+  },
+  {
+    // 5
+    "Kitchen",
+    (
+      "You are in the kitchen of the white house. A\n"
+      "table seems to have been used recently for the\n"
+      "preparation of food. A passage leads to the\n"
+      "west and a dark staircase can be seen leading\n"
+      "upward. A dark chimney leads down and to the\n"
+      "east is a small window which is open."
+    ),
+    15, 6, 4, -1,
+  },
+  {
+    // 6
+    "Living Room",
+    (
+      "You are in the living room. There is a doorway\n"
+      "to the east, a wooden door with strange gothic\n"
+      "lettering to the west, which appears to be nailed\n"
+      "shut, a trophy case, and a large oriental rug in\n"
+      "the center of the room.\n"
+      "\n"
+      "Above the trophy case hangs an elvish sword of\n"
+      "great antiquity.\n"
+      "\n"
+      "A battery-powered brass lantern is on the trophy\n"
+      "case."
+    ),
+    -1, -1, 5, -1,
+  },
+  {
+    // 7
+    "Forest Path",
+    (
+      "This is a path winding through a dimly lit\n"
+      "forest. The path heads north-south here. One\n"
+      "particularly large tree with some low branches\n"
+      "stands at the edge of the path."
+    ),
+    8, 9, 10, 2,
+  },
+  {
+    // 8
+    "Clearing",
+    (
+      "You are in a clearing, with a forest\n"
+      "surrounding you on all sides. A path leads\n"
+      "south."
+    ),
+    -1, 9, 10, 7,
+  },
+  {
+    // 9
+    "Forest", // West
+    (
+      "This is a forest, with trees in all directions.\n"
+      "To the east, there appears to be sunlight."
+    ),
+    8, -1, 7, 11,
+  },
+  {
+    // 10
+    "Forest", // East
+    (
+      "This is a dimly lit forest, with large trees\n"
+      "all around."
+    ),
+    8, 7, 12, 13,
+  },
+  {
+    // 11
+    "Forest", // South
+    (
+      "This is a dimly lit forest, with large trees\n"
+      "all around."
+    ),
+    13, 9, 14, -1,
+  },
+  {
+    // 12
+    "Forest", // Far East
+    (
+      "The forest thins out, revealing impassable\n"
+      "mountains."
+    ),
+    10, 10, -1, 10,
+  },
+  {
+    // 13
+    "Clearing", // West
+    (
+      "You are in a small clearing in a well marked\n"
+      "forest path that extends to the east and west."
+    ),
+    10, 4, 14, 11,
+  },
+  {
+    // 14
+    "Canyon View",
+    (
+      "You are at the top of the Great Canyon on its\n"
+      "west wall. From here there is a marvelous view\n"
+      "of the canyon and parts of the Frigid River\n"
+      "upstream. Across the canyon, the walls of the\n"
+      "White Cliffs join the mighty ramparts of the\n"
+      "Flathead Mountains to the east. Following the\n"
+      "Canyon upstream to the north, Aragain Falls may\n"
+      "be seen, complete with rainbow. The mighty Frigid\n"
+      "River flows out from a great dark cavern. To the\n"
+      "west and south can be seen an immense forest,\n"
+      "stretching for miles around. A path leads north."
+    ),
+    13, 11, -1, -1,
+  },
+  {
+    // 15
+    "Dark Place",
+    (
+      "It is pitch black. You are likely to be eaten\n"
+      "by a grue."
+    ),
+    -1, -1, -1, 5,
   },
 };
 
-const int start = 15;
+const int start = 0;
+const int darkPlace = 15;
 int where = start;
 
 
@@ -317,7 +318,7 @@ void loop()
                   badgeno = 0;
                 }
                 showBadge();
-              } else if (where == 14) {
+              } else if (where == darkPlace) {
                 // Easter egg!
                 next = start;
               } else {
@@ -356,16 +357,6 @@ void configModeCallback (WiFiManager *myWiFiManager){
   display.setCursor(0, 50);
   display.println("Connect to Badgy AP");
   display.println("to setup your WiFi!");
-  display.update();
-}
-
-void showText(char *text) {
-  display.setRotation(3); //even = portrait, odd = landscape
-  display.fillScreen(GxEPD_WHITE);
-  display.setTextColor(GxEPD_BLACK);
-  display.setFont(&FreeSans9pt7b);
-  display.setCursor(10, 70);
-  display.println(text);
   display.update();
 }
 
