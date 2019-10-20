@@ -1,7 +1,7 @@
 BOARD = --board esp8266:esp8266:nodemcuv2
 
-verify: hello.ino
+verify: badge.ino
 	arduino --verify $(BOARD) $<
 	
-install: hello.ino
+install: badge.ino
 	arduino --upload $(BOARD) $<

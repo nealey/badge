@@ -32,6 +32,11 @@ char *badges[][4] = {
   },
   {
     "Neale", "Pickett",
+    "Los Alamos National Laboratory",
+    "",
+  },
+  {
+    "Neale", "Pickett",
     "",
     "",
   },
@@ -86,7 +91,7 @@ struct Room rooms[] = {
       "into the forest to the east. In one corner of\n"
       "the house there is a small window which is open."
     ),
-    1, 4, 7, 2,
+    1, 4, 12, 2,
   },
   {
     // 4
@@ -214,7 +219,7 @@ struct Room rooms[] = {
   },
   {
     // 15
-    "Neale Pickett",
+    "--== Neale Pickett ==--",
     (
       "YOU ARE LIKELY TO BE\n"
       "EATEN BY A GRUE\n"
@@ -305,18 +310,21 @@ void loop()
               next = rooms[where].west;
               break;
             case 2: // center
-              if (where == 14) {
-                // Easter egg!
-                next = start;
-              } else {
+              if (where == start) {
                 // Cycle through badges
                 badgeno += 1;
                 if (badges[badgeno][0] == NULL) {
                   badgeno = 0;
                 }
                 showBadge();
+              } else if (where == 14) {
+                // Easter egg!
+                next = start;
+              } else {
+                // Show whatever badge was last shown
                 where = start;
                 next = -1;
+                showBadge();
               }
               break;
             case 3: // right
