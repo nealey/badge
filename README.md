@@ -1,3 +1,5 @@
+This project's home is <https://git.woozle.org/neale/badge>.
+
 This is the code to my badge.
 It runs on a [Badgy 2C](https://github.com/sqfmi/badgy).
 
