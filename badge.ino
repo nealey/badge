@@ -19,25 +19,25 @@
 
 #define len(a) (sizeof(a) / sizeof(*a))
 
-char *badges[][4] = {
+const char *badges[][4] = {
   {
     "Neale", "Pickett",
-    "Los Alamos National Laboratory",
-    "Cyber Fire Lead",
+    "",
+    "",
   },
   {
     "Neale", "Pickett",
     "Cybersecurity Educator",
-    "Los Alamos National Laboratory",
+    "Pacific Northwest National Lab",
   },
   {
     "Neale", "Pickett",
-    "Los Alamos National Laboratory",
+    "Pacific Northwest National Lab",
     "",
   },
   {
     "Neale", "Pickett",
-    "",
+    "Nerd",
     "",
   },
   NULL
@@ -47,8 +47,8 @@ int badgeno = 0;
 
 
 struct Room {
-  char *title;
-  char *description;
+  const char *title;
+  const char *description;
   int north, west, east, south;
 };
 
